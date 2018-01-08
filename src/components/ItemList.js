@@ -24,6 +24,7 @@ class ItemList extends Component {
             <ul>
                 {this.props.items.map((item, index) => (
                     <li key={item.id}>
+                        <img src={item.imageUrl} width="50" height="50"/>
                         {item.label}
                         <button onClick={() => this.removeItem(index)}>Remove</button>
                     </li>
